@@ -26,6 +26,8 @@ import rip.orbit.hub.uHub;
 import rip.orbit.hub.util.Color;
 import rip.orbit.hub.util.Items;
 import rip.orbit.hub.util.Style;
+import rip.orbit.nebula.Nebula;
+import rip.orbit.nebula.rank.Rank;
 import rip.orbit.nebula.util.CC;
 
 import java.util.List;
@@ -111,19 +113,16 @@ public class PlayerListener implements Listener {
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
+        Rank rank = Nebula.getInstance().getProfileHandler().fromUuid(player.getUniqueId()).getActiveRank();
 
         new BukkitRunnable() {
             @Override
             public void run() {
                 boolean ena = uHub.getInstance().getConfig().getBoolean("Restricted-Hub.Enabled");
                 if (ena) {
-                    if (event.getPlayer().hasPermission("orbit.donor")) {
-                        String server = uHub.getInstance().getConfig().getString("Restricted-Hub.Bungee-Name");
-                        sendPlayerToServer(event.getPlayer(), server);
+                    if (rank.getPermissions().contains("orbit.donor")) {
+                        sendPlayerToServer(event.getPlayer(), "Rhub");
                     }
-                }
-                for (String message : uHub.getInstance().getConfig().getStringList("joinmessage")) {
-                    event.getPlayer().sendMessage(CC.translate(message.replaceAll("%name%", event.getPlayer().getDisplayName())));
                 }
             }
         }.runTaskLater(uHub.getInstance(), 20);
@@ -162,14 +161,9 @@ public class PlayerListener implements Listener {
 
         PlayerHotbar.give(player);
 
+        List<String> messages = uHub.getInstance().getConfig().getStringList("joinmessage");
+        messages.forEach(message -> player.sendMessage(Color.msg(message)));
 
-//        List<String> messages = uHub.getInstance().getConfig().getStringList("joinmessage");
-//        messages.forEach(message -> player.sendMessage(Color.msg(message)));
-
-
-        for (Player p : Bukkit.getOnlinePlayers()) {
-            event.getPlayer().hidePlayer(p);
-        }
     }
 
     public static void sendPlayerToServer(Player player, String serverName) {

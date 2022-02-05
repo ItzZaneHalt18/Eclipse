@@ -17,6 +17,7 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.16/lombok-1.16.16.jar" />
         </processorPath>
         <module name="uHub-master" />
+        <module name="Eclipse" />
       </profile>
     </annotationProcessing>
   </component>
