@@ -9,15 +9,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="uHub" />
       </profile>
-      <profile name="Annotation profile for uHub" enabled="true">
+      <profile name="Annotation profile for Eclipse" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.16/lombok-1.16.16.jar" />
         </processorPath>
-        <module name="uHub-master" />
         <module name="Eclipse" />
+        <module name="uHub-master" />
       </profile>
     </annotationProcessing>
   </component>

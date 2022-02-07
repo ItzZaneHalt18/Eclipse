@@ -1,5 +1,5 @@
-name: Hub
+name: Eclipse
 author: Orbit Development Team
 version: ${git.commit.id.abbrev}
-main: rip.orbit.hub.uHub
+main: rip.orbit.eclipse.Eclipse
 depend: [Nebula, Proton]
