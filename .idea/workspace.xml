@@ -23,8 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df686bff-e7f7-4db6-a4ec-af0c8c7ef66a" name="Default Changelist" comment="Server Selector Fixed">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/hub/listener/PlayerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/hub/listener/PlayerListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/hub/selector/server/button/JoinQueueButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/hub/selector/server/button/JoinQueueButton.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

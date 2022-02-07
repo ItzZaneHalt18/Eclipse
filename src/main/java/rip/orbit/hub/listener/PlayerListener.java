@@ -136,7 +136,6 @@ public class PlayerListener implements Listener {
             player.getOpenInventory().setCursor(null);
         }
 
-
         World world = Bukkit.getServer().getWorld("world");
         Location location = new Location(world, 0.5, 75, 0.5);
         player.teleport(location);

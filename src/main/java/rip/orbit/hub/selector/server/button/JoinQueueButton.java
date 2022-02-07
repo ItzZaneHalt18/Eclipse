@@ -75,8 +75,6 @@ public class JoinQueueButton extends Button {
         }
 
         List<String> lore = new CopyOnWriteArrayList<>();
-        PriorityQueue<QueuePlayer> queue = Queue.getByName(player.getName()).getPlayers();
-
         for (String line : description) {
             line = line.replaceAll("%status%", serverStatus())
                     .replaceAll("%online%", String.valueOf(serverData.isOnline()));
