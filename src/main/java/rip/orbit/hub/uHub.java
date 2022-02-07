@@ -1,7 +1,7 @@
 package rip.orbit.hub;
 
 import cc.fyre.proton.Proton;
-import cc.fyre.proton.command.CommandHandler;
+import gg.maiko.queue.shared.server.ServerData;
 import lombok.Getter;
 import net.minecraft.util.com.google.common.io.ByteArrayDataInput;
 import net.minecraft.util.com.google.common.io.ByteArrayDataOutput;
@@ -15,7 +15,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.messaging.PluginMessageListener;
 import org.bukkit.scheduler.BukkitRunnable;
 import rip.orbit.hub.scoreboard.ScoreboardAdapter;
-import rip.orbit.hub.tab.uHubLayoutProvider;
+import rip.orbit.hub.tab.TabProvider;
 import rip.orbit.hub.util.BukkitUtil;
 import rip.orbit.hub.util.Cooldown;
 
@@ -46,8 +46,11 @@ public class uHub extends JavaPlugin implements PluginMessageListener {
         uHub.instance = this;
         Proton.getInstance().getCommandHandler().registerAll(this);
         uHub.SPAWN_LOC = new Location(Bukkit.getWorld("world"), 0.5, 75.0, 0.5);
+
         saveDefaultConfig();
-        Proton.getInstance().getTabHandler().setLayoutProvider(new uHubLayoutProvider());
+
+        Proton.getInstance().getTabHandler().setLayoutProvider(new TabProvider());
+
         Proton.getInstance().getScoreboardHandler().setConfiguration(ScoreboardAdapter.create());
 
         this.getServer().getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");

@@ -29,7 +29,6 @@ public class ServerSelectorMenu extends Menu {
     public ServerSelectorMenu() {
 
     }
-
     @Override
     public String getTitle(Player player) {
         return Style.DARK_GRAY + "Server Selector";
@@ -56,5 +55,8 @@ public class ServerSelectorMenu extends Menu {
         return buttons;
     }
 
-
+    @Override
+    public int size(Player player) {
+        return 45;
+    }
 }
