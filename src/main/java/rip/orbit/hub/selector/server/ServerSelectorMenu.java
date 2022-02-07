@@ -57,6 +57,6 @@ public class ServerSelectorMenu extends Menu {
 
     @Override
     public int size(Player player) {
-        return 45;
+        return 27;
     }
 }

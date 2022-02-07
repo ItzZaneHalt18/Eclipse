@@ -30,7 +30,7 @@ public class Items {
             .build();
 
     public static ItemStack profile = new ItemBuilder(Material.ENCHANTED_BOOK)
-            .name(Color.msg("&6&lYour Profile &a&l[NEW]"))
+            .name(Color.msg("&6&lYour Profile"))
             .build();
 
     public static ItemStack hubSelector = new ItemBuilder(Material.BOOK)

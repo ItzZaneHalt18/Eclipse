@@ -25,9 +25,7 @@
     <list default="true" id="df686bff-e7f7-4db6-a4ec-af0c8c7ef66a" name="Default Changelist" comment="Server Selector Fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/hub/selector/server/ServerSelectorMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/hub/selector/server/ServerSelectorMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/hub/tab/OnlinePlayersLayoutProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/hub/tab/uHubLayoutProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/hub/uHub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/hub/uHub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rip/orbit/hub/util/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/orbit/hub/util/Items.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +55,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1fOI9363qxO1pceunEpZUk3ObJE" />
   <component name="ProjectViewState">
@@ -148,7 +149,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Server Selector Fixed" />
